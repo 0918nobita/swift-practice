@@ -1,3 +1,9 @@
+// Template String
+
+print("1 + 2 = \(1 + 2)")
+
+// ↓イケてない例
+
 class Ordered {
   func precedes(other: Ordered) -> Bool {
     fatalError("Implement me!")
@@ -8,7 +14,7 @@ class Number: Ordered {
   var value: Double = 0
 
   override func precedes(other: Ordered) -> Bool {
-    return value < (other as! Number).value  // 2
+    return value < (other as! Number).value
   }
 }
 
